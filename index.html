@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Small Countdown Timer with Online Sound Player</title>
+<title>Little Countdown Timer with Online Sound Player</title>
 <style>
     
     body {
@@ -18,6 +18,8 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
+        transform: scale(0.75); /* Scale everything to 75% */
+        transform-origin: center;
     }
     .button {
         background-color: #320E3B;
@@ -61,15 +63,6 @@
         opacity: 0.5;
         cursor: not-allowed;
     }
-
-    .scaling-wrapper {
-        transform: scale(0.75); /* Scale to 75% */
-        transform-origin: top left;
-        position: absolute;
-        top: 20px; /* Adjust padding as needed */
-        left: 20px; /* Adjust padding as needed */
-    }
-    
 </style>
 </head>
 <body onload="resetTimer()">
